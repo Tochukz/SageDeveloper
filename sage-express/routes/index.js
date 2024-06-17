@@ -37,7 +37,6 @@ router.get("/sage-auth-callback", async (req, res, next) => {
   };
   try {
     const response = await postRequest(body);
-    /** Save the refresh_token, scope and requested_by_id to the user's record in your database  */
     return res.json(response.data);
   } catch (error) {
     if (error.response?.data) {
