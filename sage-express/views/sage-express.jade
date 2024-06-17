@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  form(action="/request-sage-access")
+    h3 Sage Access Permission
+    div(class="form-group")
+      label Country
+      select(name="country", class="form-control")
+        option(value="")
+        option(value="ie") Ireland 
+        option(value="gb") UK 
+        option(value="ca") Canada 
+        option(value="us") US
+    div(class="form-group")
+      label Access
+      select(name="scope", class="form-control")
+        option(value="full_access") Full Access 
+        option(value="readonly") Readonly
+    div(class="form-group")
+      label Language
+      select(name="language", class="form-control")
+        option(value="en-US") English US
+        option(value="en-GB") English UK
+        option(value="en-CA ") English Canada
+    div(class="form-group")
+      button(type="submit", class="btn btn-primary form-control") Integrate

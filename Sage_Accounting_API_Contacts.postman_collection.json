@@ -1,0 +1,1068 @@
+{
+	"info": {
+		"_postman_id": "71aedc23-81e1-4c71-82e8-c14a15d2b876",
+		"name": "Sage Accounting API - Contacts",
+		"description": "Documentation of the Sage Business Cloud Accounting API.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addresses",
+			"item": [
+				{
+					"name": "Returns all Addresses.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/addresses",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"addresses"
+							]
+						},
+						"description": "Returns all Addresses."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Address that has been created.",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/addresses",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"addresses"
+							]
+						},
+						"description": "Returns a single Address that has been created."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Address.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/addresses/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"addresses",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": ""
+								}
+							]
+						},
+						"description": "Returns a single Address."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Address that has been updated.",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/addresses/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"addresses",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Returns a single Address that has been updated."
+					},
+					"response": []
+				},
+				{
+					"name": "Deletes a single Address.",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/addresses/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"addresses",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Deletes a single Address."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for addresses"
+		},
+		{
+			"name": "address_types",
+			"item": [
+				{
+					"name": "Returns all Address Types.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/address_types",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"address_types"
+							]
+						},
+						"description": "Returns all Address Types."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Address Type.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/address_types/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"address_types",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Returns a single Address Type."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for address_types"
+		},
+		{
+			"name": "address_regions",
+			"item": [
+				{
+					"name": "Returns all Address Regions.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/address_regions",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"address_regions"
+							]
+						},
+						"description": "Returns all Address Regions."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Address Region.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/address_regions/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"address_regions",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Returns a single Address Region."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for address_regions"
+		},
+		{
+			"name": "contacts",
+			"item": [
+				{
+					"name": "Returns all Contacts.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contacts?updated_or_created_since={{updated_or_created_since}}&deleted_since={{deleted_since}}&contact_type_id={{contact_type_id}}&search={{search}}&email={{email}}&nested_attributes={{nested_attributes}}&show_legacy_id={{show_legacy_id}}&items_per_page=20&page=1&attributes={{attributes}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contacts"
+							],
+							"query": [
+								{
+									"key": "updated_or_created_since",
+									"value": "{{updated_or_created_since}}"
+								},
+								{
+									"key": "deleted_since",
+									"value": "{{deleted_since}}"
+								},
+								{
+									"key": "contact_type_id",
+									"value": "{{contact_type_id}}"
+								},
+								{
+									"key": "search",
+									"value": "{{search}}"
+								},
+								{
+									"key": "email",
+									"value": "{{email}}"
+								},
+								{
+									"key": "nested_attributes",
+									"value": "{{nested_attributes}}"
+								},
+								{
+									"key": "show_legacy_id",
+									"value": "{{show_legacy_id}}"
+								},
+								{
+									"key": "items_per_page",
+									"value": "20"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "attributes",
+									"value": "{{attributes}}"
+								}
+							]
+						},
+						"description": "Returns all Contacts."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Contact that has been created.",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contacts",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contacts"
+							]
+						},
+						"description": "Returns a single Contact that has been created."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Contact.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contacts/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contacts",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Returns a single Contact."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Contact that has been updated.",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contacts/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contacts",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Returns a single Contact that has been updated."
+					},
+					"response": []
+				},
+				{
+					"name": "Deletes a single Contact.",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contacts/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contacts",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Deletes a single Contact."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for contacts"
+		},
+		{
+			"name": "contact_types",
+			"item": [
+				{
+					"name": "Returns all Contact Types.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contact_types",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contact_types"
+							]
+						},
+						"description": "Returns all Contact Types."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Contact Type.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contact_types/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contact_types",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Returns a single Contact Type."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for contact_types"
+		},
+		{
+			"name": "contact_persons",
+			"item": [
+				{
+					"name": "Returns all Contact People.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contact_persons",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contact_persons"
+							]
+						},
+						"description": "Returns all Contact People."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Contact Person that has been created.",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contact_persons",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contact_persons"
+							]
+						},
+						"description": "Returns a single Contact Person that has been created."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Contact Person.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contact_persons/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contact_persons",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Returns a single Contact Person."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Contact Person that has been updated.",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contact_persons/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contact_persons",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Returns a single Contact Person that has been updated."
+					},
+					"response": []
+				},
+				{
+					"name": "Deletes a single Contact Person.",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contact_persons/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contact_persons",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Deletes a single Contact Person."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for contact_persons"
+		},
+		{
+			"name": "contact_person_types",
+			"item": [
+				{
+					"name": "Returns all Contact Person Types.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contact_person_types",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contact_person_types"
+							]
+						},
+						"description": "Returns all Contact Person Types."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Contact Person Type.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/contact_person_types/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"contact_person_types",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Returns a single Contact Person Type."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for contact_person_types"
+		},
+		{
+			"name": "countries",
+			"item": [
+				{
+					"name": "Returns all Countries.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/countries",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"countries"
+							]
+						},
+						"description": "Returns all Countries."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Country.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/countries/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"countries",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Returns a single Country."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for countries"
+		},
+		{
+			"name": "country_groups",
+			"item": [
+				{
+					"name": "Returns all Country Groups.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/country_groups",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"country_groups"
+							]
+						},
+						"description": "Returns all Country Groups."
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a single Country Group.",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.accounting.sage.com/v3.1/country_groups/:key",
+							"protocol": "https",
+							"host": [
+								"api",
+								"accounting",
+								"sage",
+								"com"
+							],
+							"path": [
+								"v3.1",
+								"country_groups",
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								}
+							]
+						},
+						"description": "Returns a single Country Group."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for country_groups"
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2d0886ec-c072-4091-8bb8-57c4a147c535",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "928c149e-c28a-4bae-b0e5-224c8d6e9746",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,1 +1,5 @@
 .env
+sage-recovery.txt
+node_modules
+sage-user-access.json
+.vscode
