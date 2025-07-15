@@ -3,3 +3,4 @@ sage-recovery.txt
 node_modules
 sage-user-access.json
 .vscode
+.DS_Store
