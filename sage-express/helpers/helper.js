@@ -87,7 +87,29 @@ async function putRequest(url, body) {
   return response;
 }
 
+const extractSageErrorMessages = (error) => {
+  if (
+    error &&
+    typeof error === "object" &&
+    "response" in error &&
+    Array.isArray(error.response.data)
+  ) {
+    const sageErrors = error.response.data.map((responseError) => {
+      return `${responseError.$source} ${responseError.$message}`;
+    });
+    return sageErrors.join("\n");
+  } else if (error && typeof error === "object" && "message" in error) {
+    return error.message;
+  }
+  return JSON.stringify(error);
+};
+
 function processError(error) {
+  const errMs = extractSageErrorMessages(error);
+  return new Error(errMs);
+
+  console.log("error", error);
+
   const status = error.response?.status;
   const data = error.response?.data;
   if (!data) {

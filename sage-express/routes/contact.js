@@ -40,6 +40,23 @@ router.put("/:contactId", postContactValidator, async (req, res, next) => {
   }
 });
 
+router.get("/search", async (req, res, next) => {
+  const { page, items_per_page, search } = req.query;
+  const currentPage = page ?? 1;
+  const itemPerPage = items_per_page ?? 200;
+
+  try {
+    const url = `${SAGE_ACCOUNTING_API}/contacts?page=${currentPage}&items_per_page=${itemPerPage}&search=${search}`;
+    const response = await getRequest(url);
+    return res.status(response.status).json(response.data);
+  } catch (error) {
+    if (error.response?.data) {
+      return next(processError(error));
+    }
+    return next(error);
+  }
+});
+
 router.get("/:contactId", async (req, res, next) => {
   const contactId = req.params.contactId;
 
